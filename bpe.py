@@ -12,7 +12,7 @@ def preprocess(text):
     chunks = chunkize(text)
     byte_chunks = []
     for chunk in chunks:
-        byte_chunk = list(chunk.encode("utf-8")) # returns an iterable of 
+        byte_chunk = list(chunk.encode("utf-8"))
         byte_chunks.append(byte_chunk)
     return byte_chunks
 
