@@ -106,7 +106,7 @@ class BPETokenizer():
         for token in tokens:
             decoded = self.decode_dict[token]
             decoded_tokens.extend(list(decoded))
-        result = bytes(decoded_tokens).decode("utf-8")
+        result = bytes(decoded_tokens).decode("utf-8", errors="replace")
         return result
     
 
